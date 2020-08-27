@@ -1,13 +1,25 @@
 // Nanode5 Modbus Slave (IO module)
 // Implements basic Modbus based on info from http://www.simplymodbus.ca/
-// Create a Modbus TCP Slave device for OpenPLC
-// https://www.openplcproject.com/
+// Create a Modbus TCP Slave device for OpenPLC https://www.openplcproject.com/
+//
+//    Copyright (C) 2020 Chris van den Hooven
+//
+//    This program is free software: you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation version 3.
+//
+//    This program is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 // Code is targeted to a Nanode5 (Arduino clone with ENC28J60 ethernet)
 // https://wiki.london.hackspace.org.uk/view/Project:Nanode
 // Nanode pin8 = CS of ENC28J60. Change accordingly for other boards/shields.
-// When programming with FTDI use board settings in Arduino IDE: Arduino Duemilanove/Diecimila
-//
+// When programming with FTDI use board settings in Arduino IDE: Arduino Duemilanove/Diecimila//
 // Available I/O on Nanode5 (X=NOT available, Aout = PWM)
 //
 //      Din Dout  Ain Aout Remarks
